@@ -1,0 +1,16 @@
+<launch>
+  <node pkg="pointcloud_crop" type="pointcloud_crop_node" name="pointcloud_crop_node" output="screen">
+    <param name="topic" type="string" value="/aft_pgo_map" />
+
+    <param name="x_min" value="-10.0" />
+    <param name="x_max" value="10.0" />
+
+    <param name="y_min" value="-10.0" />
+    <param name="y_max" value="10.0" />
+
+    <param name="z_min" value="-10.0"/>
+    <param name="z_max" value="10.0"/>
+
+    <param name="save_enable" value="1" />
+  </node>
+</launch>
